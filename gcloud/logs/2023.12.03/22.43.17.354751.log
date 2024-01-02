@@ -1,0 +1,28 @@
+2023-12-03 22:43:17,355 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-12-03 22:43:17,357 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-12-03 22:43:17,358 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2023-12-03 22:43:17,417 DEBUG    root            Chosen display Format:default json
+2023-12-03 22:43:17,417 INFO     root            Display format: "default json"
+2023-12-03 22:43:17,418 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "core": {
+        "account": "sacharjeeofficial@gmail.com",
+        "disable_usage_reporting": "False",
+        "project": "mathgaps-56d5a"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AfB_byCNiCmlsFM20V9K4Tx5Njpz-2lwwMKyNsrKhyrvkVdtXUamWmQWBgR5fcuTtoZBveInGq9SnUfI7pvsR54QENfDhFoGjvgr4MApCnz57o9mKm_btWUuSSIfHjQx1Tqq7kbR7A9rqS4l6gDN4YnFL1tegT_gewSL8YIYeW4daCgYKATISARMSFQHGX2MivfYIrunSLUlDRjwypZ7_3A0179",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImU0YWRmYjQzNmI5ZTE5N2UyZTExMDZhZjJjODQyMjg0ZTQ5ODZhZmYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEzOTUzMTcwMDMzNDg0NjI5MDc5IiwiZW1haWwiOiJzYWNoYXJqZWVvZmZpY2lhbEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6InlrOHUyazU2MHgwcURZNXhZVVFxbGciLCJpYXQiOjE3MDE2MjIxNjYsImV4cCI6MTcwMTYyNTc2Nn0.ZVu7YDwNkQB9XYGYtJeS5SNDdLdvR5m2n8zK-32JddRH6JcMSamZC3N4FB5hixiMALUVMHC1iLFVGRfTXzNT6qpTfYjJbicx50lP4bS2x2ArJnFp-iH73gfaBFjDSeXAjmKGeUScIbMTmi2dtyF72Spi143_20HUJ4nAvuLGTfKHcVeh1eIV-tY7qByTle6tRqF0yLjtONfQmGQ-xEYiS_2o9Db20Tvyt4RlNqocA4XKd6njhzZWPaITIJoG95iXnUkpvkeYFA-RWZSGH23eQiXl3fTNbs1qk1xo5FnDqaXW_5Om3TmnaHS_nniQqLNCNh0x2VP3tpaDp1x-ttjbWg",
+    "token_expiry": "2023-12-03T17:49:25Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/user/.config/gcloud/config_sentinel"
+  }
+}
+2023-12-03 22:43:17,418 INFO     ___FILE_ONLY___ 
+
+2023-12-03 22:43:17,422 DEBUG    root            Metrics reporting process started...

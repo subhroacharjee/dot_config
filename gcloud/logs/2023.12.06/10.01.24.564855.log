@@ -1,0 +1,18 @@
+2023-12-06 10:01:24,565 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2023-12-06 10:01:24,566 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2023-12-06 10:01:24,567 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "sacharjeeofficial@gmail.com", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "mathgaps-56d5a"]
+2023-12-06 10:01:24,630 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-12-06 10:01:24,815 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-12-06 10:01:25,275 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-12-06 10:01:25,430 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-12-06 10:01:27,240 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/mathgaps-56d5a?alt=json HTTP/1.1" 200 None
+2023-12-06 10:01:27,248 DEBUG    root            Chosen display Format:default value(name)
+2023-12-06 10:01:27,249 INFO     root            Display format: "default value(name)"
+2023-12-06 10:01:27,249 INFO     ___FILE_ONLY___ Tutero
+
+2023-12-06 10:01:27,251 DEBUG    root            Checking for updates...
+2023-12-06 10:01:27,311 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2023-12-06 10:01:28,031 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 209949
+2023-12-06 10:01:28,222 DEBUG    root            Updating notification cache...
+2023-12-06 10:01:28,222 DEBUG    root            Activating notification: [default]
+2023-12-06 10:01:28,232 DEBUG    root            Metrics reporting process started...

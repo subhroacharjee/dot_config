@@ -1,0 +1,10 @@
+2023-12-24 09:12:09,469 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2023-12-24 09:12:09,470 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2023-12-24 09:12:09,471 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "sacharjeeofficial@gmail.com", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "mathgaps-56d5a"]
+2023-12-24 09:12:09,665 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-12-24 09:12:11,537 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/mathgaps-56d5a?alt=json HTTP/1.1" 200 None
+2023-12-24 09:12:11,543 DEBUG    root            Chosen display Format:default value(name)
+2023-12-24 09:12:11,544 INFO     root            Display format: "default value(name)"
+2023-12-24 09:12:11,545 INFO     ___FILE_ONLY___ Tutero
+
+2023-12-24 09:12:11,557 DEBUG    root            Metrics reporting process started...

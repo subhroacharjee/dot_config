@@ -1,0 +1,4 @@
+2023-12-06 10:01:28,689 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2023-12-06 10:01:28,690 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2023-12-06 10:01:28,691 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "sacharjeeofficial@gmail.com", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "mathgaps-56d5a"]
+2023-12-06 10:01:28,700 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443

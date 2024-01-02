@@ -1,0 +1,113 @@
+2023-12-29 22:48:02,630 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-12-29 22:48:02,631 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2023-12-29 22:48:02,632 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'describe']
+2023-12-29 22:48:02,633 DEBUG    root            Running [gcloud.config.configurations.describe] with arguments: [--format: "value[separator=""](properties.core.account,properties.core.project)", CONFIGURATION_NAME: "default"]
+2023-12-29 22:48:02,634 DEBUG    root            Chosen display Format:default value[separator=""](properties.core.account,properties.core.project)
+2023-12-29 22:48:02,634 INFO     root            Display format: "default value[separator=""](properties.core.account,properties.core.project)"
+2023-12-29 22:48:02,634 INFO     ___FILE_ONLY___ sacharjeeofficial@gmail.commathgaps-56d5a
+
+2023-12-29 22:48:02,634 DEBUG    root            Checking for updates...
+2023-12-29 22:48:12,446 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2023-12-29 22:48:15,450 DEBUG    root            Failed to perform update check.
+Traceback (most recent call last):
+  File "/Users/user/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/third_party/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/Users/user/google-cloud-sdk/lib/third_party/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/user/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 717, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 406, in _make_request
+    self._validate_conn(conn)
+  File "/Users/user/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 1057, in _validate_conn
+    conn.connect()
+  File "/Users/user/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x105975d90>, 'Connection to dl.google.com timed out. (connect timeout=3)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/user/google-cloud-sdk/lib/third_party/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/third_party/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='dl.google.com', port=443): Max retries exceeded with url: /dl/cloudsdk/channels/rapid/components-2.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x105975d90>, 'Connection to dl.google.com timed out. (connect timeout=3)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 61, in UpdateCheck
+    update_manager.UpdateManager.PerformUpdateCheck(command_path=command_path)
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 322, in PerformUpdateCheck
+    manager._PerformUpdateCheck(command_path, force=force)
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 760, in _PerformUpdateCheck
+    (_, diff) = self._GetStateAndDiff(
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 714, in _GetStateAndDiff
+    latest_snapshot = self._GetLatestSnapshot(version=version,
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 697, in _GetLatestSnapshot
+    return snapshots.ComponentSnapshot.FromURLs(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/updater/snapshots.py", line 175, in FromURLs
+    data = [
+           ^
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/updater/snapshots.py", line 176, in <listcomp>
+    (ComponentSnapshot._DictFromURL(
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/updater/snapshots.py", line 200, in _DictFromURL
+    response = installers.MakeRequest(url, command_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/updater/installers.py", line 114, in MakeRequest
+    return _RawRequest(url, headers=headers, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/updater/installers.py", line 162, in _RawRequest
+    return retryer.RetryOnException(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 201, in RetryOnException
+    exceptions.reraise(exc_info[1], tb=exc_info[2])
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 146, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/Users/user/google-cloud-sdk/lib/third_party/six/__init__.py", line 719, in reraise
+    raise value
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 182, in TryFunc
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/updater/installers.py", line 192, in _ExecuteRequestAndRaiseExceptions
+    response = requests_session.get(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/third_party/requests/sessions.py", line 557, in get
+    return self.request('GET', url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/transport.py", line 258, in WrappedRequest
+    response = orig_request(*modified_args, **modified_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 246, in WrappedRequest
+    return orig_request_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/third_party/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/third_party/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/google-cloud-sdk/lib/third_party/requests/adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='dl.google.com', port=443): Max retries exceeded with url: /dl/cloudsdk/channels/rapid/components-2.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x105975d90>, 'Connection to dl.google.com timed out. (connect timeout=3)'))
+2023-12-29 22:48:15,472 DEBUG    root            Metrics reporting process started...

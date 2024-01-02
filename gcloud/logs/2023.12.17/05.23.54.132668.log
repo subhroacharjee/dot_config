@@ -1,0 +1,16 @@
+2023-12-17 05:23:54,133 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2023-12-17 05:23:54,135 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2023-12-17 05:23:54,136 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "sacharjeeofficial@gmail.com", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "mathgaps-56d5a"]
+2023-12-17 05:23:54,329 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-12-17 06:19:38,522 DEBUG    root            Caught socket error, retrying: HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Read timed out. (read timeout=300)
+2023-12-17 06:19:38,527 DEBUG    root            Retrying request to url https://cloudresourcemanager.googleapis.com/v1/projects/mathgaps-56d5a?alt=json after exception HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Read timed out. (read timeout=300)
+2023-12-17 06:19:40,786 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-12-17 06:19:40,849 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-12-17 06:19:41,233 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-12-17 06:19:41,366 DEBUG    urllib3.connectionpool Starting new HTTPS connection (2): cloudresourcemanager.googleapis.com:443
+2023-12-17 06:19:43,236 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/mathgaps-56d5a?alt=json HTTP/1.1" 200 None
+2023-12-17 06:19:43,248 DEBUG    root            Chosen display Format:default value(name)
+2023-12-17 06:19:43,250 INFO     root            Display format: "default value(name)"
+2023-12-17 06:19:43,251 INFO     ___FILE_ONLY___ Tutero
+
+2023-12-17 06:19:43,275 DEBUG    root            Metrics reporting process started...
